@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Story Progression Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="vintagestory_banner.jpg" alt="Vintage Story Banner">
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Progression Stages</h2>
+            <ul>
+                <li><a href="#stage1">Early Survival</a></li>
+                <li><a href="#stage2">Basic Crafting</a></li>
+                <li><a href="#stage3">Advanced Tools</a></li>
+                <li><a href="#stage4">Metal Age</a></li>
+            <button id="reset-button">Uncheck All</button>
+    </ul>
+    </div>
+        <div class="content">
+            <section id="checklist" class="checklist">
+                <h2 id="stage1">Early Survival</h2>
+                <ul>
+                    <li><input type="checkbox" id="task1"><label for="task1">Gather basic resources (sticks, stones, grass)</label></li>
+                    <li><input type="checkbox" id="task2"><label for="task2">Craft first tools (knapping flint tools)</label></li>
+                    <li><input type="checkbox" id="task3"><label for="task3">Build a shelter before nightfall</label></li>
+                </ul>
+                <h2 id="stage2">Basic Crafting</h2>
+                <ul>
+                    <li><input type="checkbox" id="task4"><label for="task4">Find food sources (berries, mushrooms, hunting)</label></li>
+                    <li><input type="checkbox" id="task5"><label for="task5">Make a firepit for cooking and warmth</label></li>
+                    <li><input type="checkbox" id="task6"><label for="task6">Begin clay forming (pottery, storage vessels)</label></li>
+                </ul>
+                <h2 id="stage3">Advanced Tools</h2>
+                <ul>
+                    <li><input type="checkbox" id="task7"><label for="task7">Start copper prospecting for metal tools</label></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
