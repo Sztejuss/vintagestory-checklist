@@ -57,9 +57,9 @@ body {
 
 /* Main Content */
 main {
-    margin-left: 270px;
-    padding: 20px;
-    width: 100%;
+    margin-left: 280px; /* Zwiększony odstęp od sidebaru */
+    padding: 30px; /* Większy padding dla lepszej czytelności */
+    width: calc(100% - 280px); /* Dostosowanie szerokości */
 }
 
 .banner {
