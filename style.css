@@ -4,9 +4,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh;
-    color: black;
     flex-direction: column;
+    color: black;
 }
 
 .header {
@@ -15,9 +14,6 @@ body {
     background: #f4f4f4;
     padding: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .header img {
@@ -75,31 +71,25 @@ body {
     background: #dcdcdc;
 }
 
-#reset-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background: #d9534f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 1em;
-}
-
-#reset-button:hover {
-    background: #c9302c;
-}
-
 .content {
     margin-left: 270px;
     padding: 20px;
     width: calc(100% - 270px);
     position: relative;
-    z-index: 1;
     max-width: 900px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 .checklist {
