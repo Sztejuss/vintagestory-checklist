@@ -16,12 +16,6 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar h2 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -51,33 +45,23 @@ body {
     cursor: pointer;
 }
 
-#reset-progress:hover {
-    background-color: #c9302c;
-}
-
-/* Main Content */
 main {
-    margin-left: 280px; /* Zwiększony odstęp od sidebaru */
-    padding: 30px; /* Większy padding dla lepszej czytelności */
-    width: calc(100% - 280px); /* Dostosowanie szerokości */
+    margin-left: 270px;
+    padding: 30px;
+    width: calc(100% - 270px);
 }
 
-.banner {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    margin-bottom: 20px;
+/* Ukrywanie sekcji */
+.page {
+    display: none;
 }
 
-.progress-section {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.page.active {
+    display: block;
 }
 
-.progress-section h2 {
+/* Nagłówki */
+.section-title {
     background: #007acc;
     color: white;
     padding: 10px;

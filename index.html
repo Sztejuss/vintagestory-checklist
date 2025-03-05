@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VintageStory Progression Checklist</title>
-    <link rel="stylesheet" href="/vintagestory-checklist/CSS/style.css">
-    <script defer src="/vintagestory-checklist/JS/script.js"></script>
+    <title>Vintage Story Progression Checklist</title>
+    <link rel="stylesheet" href="vintagestory-checklist/CSS/styles.css">
+    <script defer src="vintagestory-checklist/JS/script.js"></script>
 </head>
 <body>
 
@@ -15,10 +15,10 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#early-survival">Early Survival</a></li>
-                <li><a href="#basic-crafting">Basic Crafting</a></li>
-                <li><a href="#advanced-tools">Advanced Tools</a></li>
-                <li><a href="#metal-age">Metal Age</a></li>
+                <li><a href="#journeys-beginning">Journey’s Beginning</a></li>
+                <li><a href="#the-corruption">The Corruption</a></li>
+                <li><a href="#the-dungeon">The Dungeon</a></li>
+                <li><a href="#the-underworld">The Underworld</a></li>
             </ul>
         </nav>
         <button id="reset-progress">Reset Progress</button>
@@ -26,7 +26,9 @@
 
     <!-- Main Content -->
     <main>
-        <section id="home">
+
+        <!-- Home Page -->
+        <section id="home" class="page">
             <img src="banner.jpg" alt="Vintage Story Banner" class="banner">
             <h1>Welcome to Vintage Story Progression Checklist! 🛠️</h1>
             <p>This tool is created to help you track your progress in Vintage Story. The checklist outlines the major milestones needed for advancing in the game.</p>
@@ -34,37 +36,46 @@
             <p>🗑️ If you want to reset your progress, use the reset button in the menu.</p>
         </section>
 
-        <section id="early-survival" class="progress-section">
-            <h2>Early Survival</h2>
+        <!-- Journey's Beginning -->
+        <section id="journeys-beginning" class="page">
+            <h2 class="section-title">I. JOURNEY'S BEGINNING</h2>
             <ul>
-                <li><input type="checkbox" id="task1"> Gather basic resources (sticks, stones, grass)</li>
-                <li><input type="checkbox" id="task2"> Craft first tools (knapping flint tools)</li>
-                <li><input type="checkbox" id="task3"> Build a shelter before nightfall</li>
+                <li><input type="checkbox" id="task1"> Gather resources to build a house</li>
+                <li><input type="checkbox" id="task2"> Explore caverns and find Life Crystals</li>
+                <li><input type="checkbox" id="task3"> Craft a Grappling Hook</li>
             </ul>
         </section>
 
-        <section id="basic-crafting" class="progress-section">
-            <h2>Basic Crafting</h2>
+        <!-- The Corruption -->
+        <section id="the-corruption" class="page">
+            <h2 class="section-title">II. THE CORRUPTION</h2>
             <ul>
-                <li><input type="checkbox" id="task4"> Find food sources (berries, mushrooms, hunting)</li>
-                <li><input type="checkbox" id="task5"> Make a firepit for cooking and warmth</li>
-                <li><input type="checkbox" id="task6"> Begin clay forming (pottery, storage vessels)</li>
+                <li><input type="checkbox" id="task4"> Defeat the Eater of Worlds</li>
+                <li><input type="checkbox" id="task5"> Buy Rocket Boots from Goblin Tinkerer</li>
+                <li><input type="checkbox" id="task6"> Destroy all Shadow Orbs</li>
             </ul>
         </section>
 
-        <section id="advanced-tools" class="progress-section">
-            <h2>Advanced Tools</h2>
+        <!-- The Dungeon -->
+        <section id="the-dungeon" class="page">
+            <h2 class="section-title">III. THE DUNGEON</h2>
             <ul>
-                <li><input type="checkbox" id="task7"> Start copper prospecting for metal tools</li>
+                <li><input type="checkbox" id="task7"> Defeat Skeletron</li>
+                <li><input type="checkbox" id="task8"> Explore the Dungeon for loot</li>
+                <li><input type="checkbox" id="task9"> Collect a Muramasa</li>
             </ul>
         </section>
 
-        <section id="metal-age" class="progress-section">
-            <h2>Metal Age</h2>
+        <!-- The Underworld -->
+        <section id="the-underworld" class="page">
+            <h2 class="section-title">IV. THE UNDERWORLD</h2>
             <ul>
-                <li><input type="checkbox" id="task8"> Smelt copper and make first metal tools</li>
+                <li><input type="checkbox" id="task10"> Collect Hellstone to craft Fire gear</li>
+                <li><input type="checkbox" id="task11"> Summon and defeat the Wall of Flesh</li>
+                <li><input type="checkbox" id="task12"> Enter Hardmode</li>
             </ul>
         </section>
+
     </main>
 
 </body>
