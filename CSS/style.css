@@ -66,19 +66,15 @@ main {
     display: block;
 }
 
-/* Nagłówki */
-.section-title {
-    background: #007acc;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Banner dla każdej sekcji */
-.section-banner {
+/* Sekcja tytułowa */
+.section-header {
     width: 100%;
-    max-height: 180px;
-    object-fit: cover;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
