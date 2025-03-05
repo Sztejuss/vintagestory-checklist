@@ -5,29 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vintage Story Progression Checklist</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <img src="vintagestory_banner.jpg" alt="Vintage Story Banner">
-    </div>
-    <div class="container">
-        <div class="sidebar">
-            <h2>PROGRESSION CHECKLIST</h2>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>PROGRESSION CHECKLIST</h2>
+        <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="early-survival.html">Early Survival</a></li>
-                <li><a href="basic-crafting.html">Basic Crafting</a></li>
-                <li><a href="PODSTRONY/advanced-tools.html">Advanced Tools</a></li>
-                <li><a href="metal-age.html">Metal Age</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#early-survival">Early Survival</a></li>
+                <li><a href="#basic-crafting">Basic Crafting</a></li>
+                <li><a href="#advanced-tools">Advanced Tools</a></li>
+                <li><a href="#metal-age">Metal Age</a></li>
             </ul>
-        </div>
-        <div class="content">
+        </nav>
+        <button id="reset-progress">Reset Progress</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <img src="banner.jpg" alt="Vintage Story Banner" class="banner">
             <h1>Welcome to Vintage Story Progression Checklist! 🛠️</h1>
             <p>This tool is created to help you track your progress in Vintage Story. The checklist outlines the major milestones needed for advancing in the game.</p>
-            <p>If you are new to the game, it is recommended to explore the game yourself first before following the guide.</p>
-            <p>✅ Your progress is saved in your browser. You can close the page and return later.</p>
+            <p>✔️ Your progress is saved in your browser. You can close the page and return later.</p>
             <p>🗑️ If you want to reset your progress, use the reset button in the menu.</p>
-        </div>
-    </div>
+        </section>
+
+        <section id="early-survival" class="progress-section">
+            <h2>Early Survival</h2>
+            <ul>
+                <li><input type="checkbox" id="task1"> Gather basic resources (sticks, stones, grass)</li>
+                <li><input type="checkbox" id="task2"> Craft first tools (knapping flint tools)</li>
+                <li><input type="checkbox" id="task3"> Build a shelter before nightfall</li>
+            </ul>
+        </section>
+
+        <section id="basic-crafting" class="progress-section">
+            <h2>Basic Crafting</h2>
+            <ul>
+                <li><input type="checkbox" id="task4"> Find food sources (berries, mushrooms, hunting)</li>
+                <li><input type="checkbox" id="task5"> Make a firepit for cooking and warmth</li>
+                <li><input type="checkbox" id="task6"> Begin clay forming (pottery, storage vessels)</li>
+            </ul>
+        </section>
+
+        <section id="advanced-tools" class="progress-section">
+            <h2>Advanced Tools</h2>
+            <ul>
+                <li><input type="checkbox" id="task7"> Start copper prospecting for metal tools</li>
+            </ul>
+        </section>
+
+        <section id="metal-age" class="progress-section">
+            <h2>Metal Age</h2>
+            <ul>
+                <li><input type="checkbox" id="task8"> Smelt copper and make first metal tools</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 </html>
