@@ -15,7 +15,7 @@ body {
     width: calc(100% + 60px); /* Pełna szerokość */
     margin-left: -30px; /* Wyrównanie do lewej */
     height: 250px; /* Wysokość bannera */
-    background-image: url("/vintagestory-checklist/images/baner.jpeg"); /* Ścieżka do obrazka */
+    background-image: url("/vintagestory-checklist/images/baner2.jpeg"); /* Ścieżka do obrazka */
     background-size: cover;
     background-position: center;
     border-radius: 5px;
