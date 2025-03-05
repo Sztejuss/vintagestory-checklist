@@ -159,3 +159,10 @@ ul li input[type="checkbox"] {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+/* Styl dla przekreślonych zadań */
+.checked {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+

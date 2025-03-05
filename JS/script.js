@@ -27,14 +27,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let checkboxes = document.querySelectorAll("input[type='checkbox']");
 
     checkboxes.forEach(checkbox => {
+        let label = checkbox.parentElement; // Pobiera <li>, w którym jest checkbox
+
         // Przy załadowaniu sprawdzamy stan checkboxów w localStorage
         if (localStorage.getItem(checkbox.id) === "true") {
             checkbox.checked = true;
+            label.classList.add("checked"); // Dodaje przekreślenie
         }
 
-        // Zapisujemy zmiany w localStorage
+        // Obsługa kliknięcia checkboxa
         checkbox.addEventListener("change", function () {
             localStorage.setItem(checkbox.id, checkbox.checked);
+            
+            if (checkbox.checked) {
+                label.classList.add("checked");
+            } else {
+                label.classList.remove("checked");
+            }
         });
     });
 
@@ -47,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             checkboxes.forEach(checkbox => {
                 checkbox.checked = false;
                 localStorage.removeItem(checkbox.id);
+                checkbox.parentElement.classList.remove("checked"); // Usuwa przekreślenie
             });
 
             // Opcjonalnie: Odśwież stronę, jeśli chcesz
